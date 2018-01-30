@@ -1,0 +1,396 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    background: #466368;
+    background: -webkit-linear-gradient(#000000, #648880);
+    background:    -moz-linear-gradient(#000000, #648880);
+    background:         linear-gradient(#000000, #648880);
+    background-repeat:no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+.
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+body {
+ height:100%;
+ width:100%;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+font-family: "BarryCades";
+url(../fonts/BarryCades.ttf) format("truetype");
+url(../fonts/BarryCades.woff) format("woff"),
+url(../fonts/BarryCades.woff2) format("woff2"),
+
+}
+@font-face           {
+    font-family: "ComfortaaRegular";
+    src: url("../fonts/ComfortaaRegular.eot");
+    src: url("../fonts/ComfortaaRegular.eot?#iefix")format("embedded-opentype"),
+    /*url("../fonts/ComfortaaRegular.woff") format("woff"),*/
+    url("../fonts/ComfortaaRegular.ttf") format("truetype");
+    font-weight: 900;
+}
+@font-face           {
+    font-family: "ComfortaaBold";
+    src: url("../fonts/ComfortaaBold.eot");
+    src: url("../fonts/ComfortaaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ComfortaaBold.ttf") format("truetype");
+}
+::-webkit-scrollbar {
+    height: 12px;
+    width: 5px;
+    background: #f6f1d3;
+}
+::-webkit-scrollbar-thumb {
+    background: #293f50;
+    -webkit-border-radius: 1ex;
+}
+#wrapper {
+position: inherit;
+width:inherit;
+height:inherit;
+margin: 1em;
+white-space: nowrap;
+min-width: 600px;
+}
+.headerImgDiv {
+position: relative;
+display: block;
+width:96.5%;
+margin-bottom:2em;
+margin-top:3em;
+background: #f6f1d3;
+height:20%;
+background-size:cover;
+box-sizing: border-box;
+/*margin-right: 50px;*/
+}
+.headerImgDiv>img {
+position: relative;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.mainBlock {
+    width:96.5%;
+    height:100%;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width:550px;
+    box-sizing: border-box;
+}
+.menuDiv {
+    position: relative;
+    display: inline-block;
+    background: #f6f1d3;
+    left: 0;
+    height: 70%;
+    width: 15%;
+    min-width: 260px;
+    margin-right: 1em;
+}
+.desktop {
+    bottom:0;
+    width:250px;
+    height:40px;
+    left:8px;
+    position: relative;
+}
+.mobile {
+    display: none;
+}
+.menuDiv>#logo {
+    bottom:-20px;
+    left:15px;
+    width:250px;
+    height:250px;
+    position: relative;
+}
+iframe {
+    width: 400px;
+    height:350px;
+}
+.menuDiv>p {
+width:100%;
+height:20px;
+text-align: center;
+font-size: 1.5em;
+color:#293f50;
+font-family:"ComfortaaRegular";
+}
+.menuDiv>p:hover {
+@extend .menuDiv;
+color:white;
+cursor:pointer;
+}
+.blockInfoDiv {
+position: relative;
+display: inline-block;
+background: #f6f1d3;
+height:70%;
+width:84.5%;
+min-width:350px;
+text-align: center;
+overflow-y: auto;
+/*box-shadow: inset 0 0 50px rgba(0,0,0,1);*/
+}
+#logo_center {
+display:none;
+}
+
+.textDiv {
+text-indent: 50px;
+position: inherit;
+font-size: 1.5em;
+color:#293f50;
+text-align: center;
+font-family:"ComfortaaRegular";
+padding: 35px;
+padding-top: 35px;
+padding-left: 55px;
+width:inherit;
+word-wrap: break-word;
+white-space: normal;
+line-height: 2;
+}
+.textDiv>ul {
+padding-bottom: 50px;
+}
+.contactDiv {
+    padding: 35px;
+    padding-top: 85px;
+    width:inherit;
+    position: inherit;
+    font-size: 1.5em;
+    left:5%;
+    color:#293f50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactDiv>div   {
+    width:250px;
+    padding-right: 100px;
+    position: inherit;
+    text-align: left;
+    top:0;
+    align-self: flex-start;
+    font-family:"ComfortaaRegular";
+}
+.contactDiv>div>p   {
+    font-family:"ComfortaaBold";
+}
+.contactDiv>div>iframe  {
+    position: inherit;
+    top:0;
+}
+#phone {
+padding-top:100px;
+}
+.textDiv>p {
+    display: inline;
+    color: #840024;
+    font-size: larger;
+    font-family:"ComfortaaBold";
+
+}
+.iconProcess  {
+   display:flex;
+   position:inherit;
+   bottom:0;
+   width:100%;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font:20px ComfortaaBold;
+   padding-top:50px;
+}
+.iconProcess > img {
+  width:100px;
+  height:100px;
+}
+.galleria{ max-width: inherit; height: 100%; background:#000 }
+
+@media (max-width: 1220px) {
+    .iconProcess {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:20px;
+}}
+
+
+@media (max-width: 760px) {
+    iframe {
+        width: 200px;
+        height: 150px;
+    }
+    #phone {
+        padding-top:20px;
+    }
+    #logo_center {
+        display:block;
+        width:200px;
+        height:150px;
+        margin: 0 auto;
+    }
+    .contactDiv {
+        font-size: 0.8em;
+        padding-top: 15px;
+        flex-direction: column;
+    }
+    .textDiv>ul {
+        padding-bottom: 20px;
+    }
+    .iconProcess > img {
+        width:60px;
+        height:60px;
+        margin-top: 10px;
+    }
+    #wrapper {
+        min-width: 300px;
+        width:95%;
+    }
+    .textDiv {
+     padding: 0;
+     padding-top: 20px;
+     padding-left: 20px;
+     padding-right: 20px;
+     width:90%;
+     font-size: 0.7em;
+    }
+    .mainBlock {
+        width:96.5%;
+        height:100%;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width:350px;
+        box-sizing: border-box;
+        font-size:15px;
+    }
+    .menuDiv {
+        position: relative;
+        background: #f6f1d3;
+        height: 6%;
+        width: inherit;
+        margin-right: 1em;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:20px;
+        min-width:350px;
+    }
+    .menuDiv>p {
+        font-size: 1em;
+    }
+    .menuDiv>img {
+        display: none;
+    }
+    /*.desktop {*/
+    /*display: none;*/
+    /*}*/
+}
+
+/*@media (max-width: 2760px) {*/
+/*}*/
