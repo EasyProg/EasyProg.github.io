@@ -148,8 +148,7 @@ min-width: 600px;
 position: relative;
 display: block;
 width:96.5%;
-margin-bottom:2em;
-margin-top:3em;
+margin-bottom:1.5em;
 background: #f6f1d3;
 height:20%;
 background-size:cover;
@@ -162,7 +161,47 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 }
-
+form {
+position: inherit;
+padding-left: 45px;
+padding-right: 45px;
+text-align: left;
+}
+form>div>input {
+border-radius: 5px;
+border-style: none;
+margin-right: 10px;
+margin-top: 10px;
+}
+form>input[type="submit"] {
+ background:#293f50;
+ color:#f6f1d3;
+ width:120px;
+ height:25px;
+ border-style: none;
+ border-radius: 5px;
+}
+form>p {
+    font-size: 1.5em;
+    color:#293f50;
+    font-family:"ComfortaaRegular";
+}
+form>textarea {
+    position:relative;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 10px;
+    width:100%;
+}
+form>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+::-webkit-input-placeholder {
+opacity: 0.5;
+}
 .mainBlock {
     width:96.5%;
     height:100%;
@@ -178,7 +217,7 @@ object-fit: cover;
     display: inline-block;
     background: #f6f1d3;
     left: 0;
-    height: 70%;
+    height: 68%;
     width: 15%;
     min-width: 260px;
     margin-right: 1em;
@@ -194,7 +233,6 @@ object-fit: cover;
     display: none;
 }
 .menuDiv>#logo {
-    bottom:-20px;
     left:15px;
     width:250px;
     height:250px;
@@ -204,8 +242,20 @@ iframe {
     width: 400px;
     height:350px;
 }
+
+#phone {
+color:#f6f1d3;
+font-family:"ComfortaaRegular";
+font-size: 1em;
+text-align: right;
+width:96.5%;
+padding-top: 0.5em;
+}
 #phone>a {
-color:black;
+color:#f6f1d3;
+text-decoration: none;
+font-style:italic;
+font-size: 1.5em;
 }
 .menuDiv>p {
 width:100%;
@@ -224,8 +274,8 @@ cursor:pointer;
 position: relative;
 display: inline-block;
 background: #f6f1d3;
-height:70%;
-width:84.5%;
+height:68%;
+width:100%;
 min-width:inherit;
 text-align: center;
 overflow-y: auto;
@@ -237,7 +287,7 @@ display:none;
 
 .textDiv {
 text-indent: 50px;
-position: inherit;
+position: relative;
 font-size: 1.5em;
 color:#293f50;
 text-align: center;
@@ -245,28 +295,29 @@ font-family:"ComfortaaRegular";
 padding: 35px;
 padding-top: 35px;
 padding-left: 55px;
-width:inherit;
 word-wrap: break-word;
 white-space: normal;
 line-height: 2;
 }
 .textDiv>ul {
 padding-bottom: 50px;
+    text-align: left;
 }
 .contactDiv {
-    padding: 35px;
-    padding-top: 85px;
-    width:inherit;
+    padding-top: 65px;
     position: inherit;
     font-size: 1.5em;
-    left:5%;
     color:#293f50;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-right: 45px;
+    margin-left:  45px;
 }
-
+#map {
+ width: 300px;
+}
 .contactDiv>div   {
     width:250px;
     padding-right: 100px;
@@ -282,9 +333,6 @@ padding-bottom: 50px;
 .contactDiv>div>iframe  {
     position: inherit;
     top:0;
-}
-#phone {
-padding-top:100px;
 }
 .textDiv>p {
     display: inline;
@@ -322,12 +370,21 @@ padding-top:100px;
 
 /*and (orientation:portrait)*/
 @media (max-width: 760px) {
-    iframe {
-        width: 200px;
-        height: 150px;
+    form>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-    #phone {
-        padding-top:20px;
+    form>p {
+        font-size: 0.8em;
+    }
+    #phone>a {
+        font-size: 1em;
+    }
+    iframe {
+        width: 250px;
+        height: 180px;
     }
     #logo_center {
         display:block;
@@ -375,7 +432,7 @@ padding-top:100px;
         position: relative;
         background: #f6f1d3;
         height: 6%;
-        width: inherit;
+        width: 100%;
         margin-right: 1em;
         display:flex;
         flex-direction: row;
