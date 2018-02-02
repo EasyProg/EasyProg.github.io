@@ -23,22 +23,16 @@ $(document).ready(
     }
 );
 function Load() {
-    console.log('SUCCESS');
     $.ajax({
         url: "https://formspree.io/kovkamy@gmail.com",
         method: "POST",
-        data: $("#addressform").serialize(),
-        dataType: "json",
-        success: function(data) {
-            $("form :input").prop("value", '');
-            console.log('SUCCESS');
-        }
+        data: {message: "hello!"},
+        dataType: "json"
     });
-    return false;
 };
 
 
-// $("#button").on('click',Load());
+$("#button").on('click',Load());
 
 function load_pages(num) {
     switch (num)
@@ -87,7 +81,7 @@ function load_pages(num) {
                 '</div>'+
                 '<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6049.50686345864!2d30.47431897827485!3d50.394438219129924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0J_RgNCw0LrRgtC40YfQvdCw0Y8gNA!5e0!3m2!1sru!2sua!4v1517235332930"  frameborder="0" style="border:0" allowfullscreen></iframe>' +
                 '</div></div>'+
-                '<form id="addressform" action="https://formspree.io/kovkamy@gmail.com" method="POST">'+
+                '<form id="addressform" method="POST">'+
                 '<p>Напишите нам:</p>'+
                 '<div><input type="text" name="fio" placeholder=" · Укажите имя"/>'+
                 '<input type="text" name="phone" placeholder=" · Мобильный номер"/>'+
