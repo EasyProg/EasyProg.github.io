@@ -177,6 +177,11 @@ height: 30px;
 padding-left: 20px;
 padding-right: 20px;
 }
+form>div>input:focus {
+border-color:white;
+outline: none
+}
+
 form>div>input[name="message"] {width:50%;min-width: 500px;}
 form>div>input[type="submit"] {
  border: 1px solid #293f50;

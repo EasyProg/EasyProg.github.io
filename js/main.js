@@ -93,7 +93,7 @@ function load_pages(num) {
                 '<input type="text" name="phone" placeholder=" · Мобильный номер"/>'+
                 '<input type="text" name="message" placeholder=" · Информация"/>'+
                 '<input id="button" type="submit" value="Отправить"/></div>'+
-                '<input type="hidden" name="_next" value="//site.io/thanks.html"/>'+
+                '<input type="hidden" name="_next" value="http://vashstyle.tk/"/>'+
                 '</form>';
             return;
 
