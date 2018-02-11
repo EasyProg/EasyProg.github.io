@@ -36,8 +36,6 @@ function Load() {
     });
     return false;
 };
-
-
 // $("#button").on('click',Load());
 
 function load_pages(num) {
