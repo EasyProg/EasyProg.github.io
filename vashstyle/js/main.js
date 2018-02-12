@@ -13,6 +13,8 @@ $(window).scroll(function(){
 $(document).ready(function() {
     Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
     Galleria.run('.galleria');
+    $('.slider').bxSlider();
+    $('.bxslider').bxSlider({captions:true});
     $(".lnk").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
