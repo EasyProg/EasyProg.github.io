@@ -263,6 +263,11 @@ margin-left:50px;
 /* ==========================================================================
    Our clients
    ========================================================================== */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+ right:0;
+ bottom:0;
+}
 #clients_feedback {
  position: relative;
  width:100%;
