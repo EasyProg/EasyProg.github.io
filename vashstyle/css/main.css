@@ -383,6 +383,23 @@ margin-left:50px;
 /* ==========================================================================
    Test section
    ========================================================================== */
+.goodname {
+  display: flex;
+    justify-content: center;
+}
+.blockDiv {
+    position:absolute;
+    width:40%;
+    height:90%;
+    background: black;
+    object-fit:cover;
+}
+.blockDiv>img {
+    position: relative;
+    width:100%;
+    height: 100%;
+    object-fit:contain;
+}
 .test_section >div:first-child {
     position:relative;
     height:350px;
@@ -390,6 +407,24 @@ margin-left:50px;
     background: #6c6c6c;
     text-align: center;
     /*background: yellow;*/
+}
+#shit {
+    position: absolute;
+    bottom:0;
+    left:0;
+    z-index: 100;
+    width:100%;
+    height:70px;
+    background: #000000;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255,255,255);
+    font-family: "OpenSans-Regular" , Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+
 }
 .test_section >div:first-child>div {
     position:absolute;
@@ -774,5 +809,9 @@ margin-left:50px;
     }
     .our_services >.about_us {
     height: 200px;
+    }
+    #shit {
+       font-size:14px;
+        padding-bottom: 15px;
     }
 }
