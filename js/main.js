@@ -73,7 +73,7 @@ function load_pages(num) {
                 '<img src="icons/ruler.svg">2. <br>Уточнение, размеры, примерка</img>' +
                 '<img src="icons/machine.svg">3. <br>Пошив изделия</img>' +
                 '<img src="icons/shirt.svg">4. <br>Ваш заказ готов</img>' +
-                '</div>'
+                '</div>';
                 '</div>';
             return;
         case 5:
